@@ -18,7 +18,7 @@ Core Technology Stack
 4. Other technologies: JDBC(Dbutils,Druid) 
 
 
-
+System Framework
 1. Dao: EmpDao, EmpManagerDao
 
 2. Entity: Emp, EmpManager, Page
