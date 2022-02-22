@@ -23,25 +23,25 @@
 
 <div id="common3">
 
-    <table style="table-layout: fixed; width: 100%; height: 90%; border-collapse: collapse; border: 1px solid black; margin: auto;text-align:center;">
+    <table border="1" cellpadding="1" cellspacing="0">
         <tr>
-            <th style="width: 35px; border: 1px solid black;border-collapse: collapse; height: 30px;">Id</th>
-            <th style="border: 1px solid black;border-collapse: collapse; height: 30px;">Name</th>
-            <th style="border: 1px solid black;border-collapse: collapse; height: 30px;">Salary</th>
-            <th style="border: 1px solid black;border-collapse: collapse; height: 30px;">Age</th>
-            <th colspan='2' style="border: 1px solid black;border-collapse: collapse; height: 30px;">Operation</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Age</th>
+            <th colspan='2'>Operation</th>
         </tr>
         <c:forEach var="emp" items="${emps}">
             <tr>
-                <td style="border: 1px solid black;border-collapse: collapse;height: 30px;">${emp.id}</td>
-                <td style="border: 1px solid black;border-collapse: collapse;height: 30px;">${emp.name}</td>
-                <td style="border: 1px solid black;border-collapse: collapse;height: 30px;">${emp.salary}</td>
-                <td style="border: 1px solid black;border-collapse: collapse;height: 30px;">${emp.age}</td>
-                <td style="border: 1px solid black;border-collapse: collapse;height: 30px;">
+                <td>${emp.id}</td>
+                <td>${emp.name}</td>
+                <td>${emp.salary}</td>
+                <td>${emp.age}</td>
+                <td>
 <%--                    <a href="${pageContext.request.contextPath}/manager/safe/removeEmp?id=${emp.id}">delete</a>--%>
                     <a href="<c:url context='${pageContext.request.contextPath}' value='/manager/safe/removeEmp?id=${emp.id}'/>">delete</a>
                 </td>
-                <td style="border: 1px solid black;border-collapse: collapse;height: 30px;">
+                <td>
 <%--                    <a href="${pageContext.request.contextPath}/manager/safe/showEmp?id=${emp.id}">update</a>--%>
                     <a href="<c:url context='${pageContext.request.contextPath}' value='/manager/safe/showEmp?id=${emp.id}'/>">update</a>
                 </td>
@@ -50,7 +50,7 @@
             </tr>
         </c:forEach>
         <tr>
-            <td colspan="6" style="border: 1px solid black;border-collapse: collapse;height: 30px;">
+            <td colspan="6">
                 <c:if test="${page.pageIndex > 1}">
                     <a href="${pageContext.request.contextPath}/manager/safe/showAllEmp?pageIndex=1"> First </a>
                 </c:if>

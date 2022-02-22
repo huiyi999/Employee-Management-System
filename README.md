@@ -11,14 +11,14 @@ How to run:
 Core Technology Stack
 1. Project framework: Java Web(Servlet)
 
-2. Basic tools: Maven/Tomcat9/MySQL/JDK17
+2. Basic tools: Maven/Tomcat/MySQL/JDK17
 
 3. The front-end technology: JSP(EL+JSTL)
 
 4. Other technologies: JDBC(Dbutils,Druid) 
 
 
-System Framework
+
 1. Dao: EmpDao, EmpManagerDao
 
 2. Entity: Emp, EmpManager, Page

@@ -194,25 +194,19 @@ div {
 }
 
 table{
-    table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
-    border: 1px solid black;
-    margin: auto;
     text-align:center;
+    height: 90%;
+}
+table,table th,table td{
+    border:1px solid black;
 }
 
-th{
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align:center;
-}
-td{
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align:center;
+table th,table td{
     height: 30px;
 }
+
 
 
 /*.table11_7 th {*/
