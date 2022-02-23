@@ -1,14 +1,14 @@
-Employee Management System 
+# Employee Management System 
 
 Project WAR path: target/EmpProject-1.0-SNAPSHOT.war
 
-How to run:
+## How to run:
 1. set Tomcat Server(port,url...)
 2. run Tomcat Server
 
 
 
-Core Technology Stack
+## Core Technology Stack
 1. Project framework: Java Web(Servlet)
 
 2. Basic tools: Maven/Tomcat/MySQL/JDK17
@@ -34,15 +34,15 @@ Core Technology Stack
 
 
 
-MVC framework 
+## MVC framework 
 Model (service+dao+entity)
 View (jsp, html)
 Controller (servlet)
 
-Three tier architecture
+## Three tier architecture
 View -> Service(interface) -> Dao(interface)
 
-Web development steps:
+## Web development steps:
 1. Dao: table, entity, Dao interface, Dao implementation
 2. Service: Service interface, Service implementation
 3. Controller(Servlet):
